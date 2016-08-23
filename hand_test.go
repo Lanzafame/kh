@@ -1,11 +1,12 @@
 package kh
 
 import (
-	"github.com/Sirupsen/logrus"
-	"github.com/stretchr/testify/assert"
 	"os"
 	"path"
 	"testing"
+
+	"github.com/Sirupsen/logrus"
+	"github.com/stretchr/testify/assert"
 )
 
 func setUpTest() string {
@@ -25,7 +26,7 @@ func TestFindsFingers(t *testing.T) {
 	home := setUpTest()
 	h, _ := MakeHand(home)
 	for _, k := range []string{"git", "gpg"} {
-		if !Map_has_key(h.Fingers, k) {
+		if !HandHasKey(h.Fingers, k) {
 			t.Errorf("Finger %s missing from set of fingers\n", k)
 		}
 	}
