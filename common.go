@@ -1,19 +1,29 @@
 package kh
 
 import (
-	"golang.org/x/crypto/ssh/terminal"
 	"io/ioutil"
 	"os"
 	"path"
 	"reflect"
 	"strings"
+
+	"golang.org/x/crypto/ssh/terminal"
 )
 
 var commonFlags []string = []string{"-v", "--verbose", "-h", "--help"}
 var subcommands []string = []string{"version", "help", "update", "init",
 	"list", "install"}
 
-func Map_has_key(m map[string]string, s string) bool {
+func HandHasKey(m map[string]*FingerDescriptor, s string) bool {
+	for str, _ := range m {
+		if s == str {
+			return true
+		}
+	}
+	return false
+}
+
+func MapHasKey(m map[string]string, s string) bool {
 	for str, _ := range m {
 		if s == str {
 			return true
