@@ -23,13 +23,14 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/Sirupsen/logrus"
-	"github.com/bryanwb/kh"
-	flag "github.com/spf13/pflag"
 	"os"
 	"os/user"
 	"path"
 	"strings"
+
+	"github.com/Lanzafame/kh"
+	"github.com/Sirupsen/logrus"
+	flag "github.com/spf13/pflag"
 )
 
 var log = logrus.New()
@@ -81,7 +82,7 @@ help                  C'mon, do I have to explain this one?
 init                  Creates a ~/.kh directory if one does not exist
                       and installs default fingers
 update [finger]       Builds one or more fingers
-                      By default, updates all   
+                      By default, updates all
 
 
 Flags:

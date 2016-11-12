@@ -2,14 +2,15 @@ package kh
 
 import (
 	"fmt"
-	log "github.com/Sirupsen/logrus"
-	"github.com/dullgiulio/pingo"
-	"github.com/hashicorp/go-multierror"
 	"io/ioutil"
 	"os"
 	"os/exec"
 	"path"
 	"strings"
+
+	log "github.com/Sirupsen/logrus"
+	"github.com/dullgiulio/pingo"
+	"github.com/hashicorp/go-multierror"
 )
 
 var Logger *log.Logger

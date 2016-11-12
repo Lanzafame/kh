@@ -1,5 +1,5 @@
 build:
-	godep go build github.com/bryanwb/kh/cmd/kh
+	godep go build github.com/Lanzafame/kh/cmd/kh
 	cd fingers/hello-world && go build
 
 clean:

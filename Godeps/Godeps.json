@@ -1,5 +1,6 @@
 {
-	"ImportPath": "github.com/bryanwb/hand",
-	"GoVersion": "go1.5.1",
+	"ImportPath": "github.com/Lanzafame/hand",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v60",
 	"Deps": []
 }
